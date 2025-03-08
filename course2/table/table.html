@@ -1,18 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Table</title>
 </head>
+
 <body>
-    <table>
+    <!-- First Table -->
+    <table id="t1" border="1">
         <tr>
-            <th>Employer sector</th>
-            <th>Median of total earnings, €/month</th>
-            <th>Full-time employees</th>
+            <th></th>
+            <th>Total</th>
+            <th>Men</th>
+            <th>Women</th>
+        </tr>
+        <tr>
+            <th>Private</th>
+            <td>3162</td>
+            <td>3381</td>
+            <td>2862</td>
+        </tr>
+        <tr>
+            <th>Local government</th>
+            <td>2812</td>
+            <td>3206</td>
+            <td>2751</td>
+        </tr>
+        <tr>
+            <th>Central government</th>
+            <td>3718</td>
+            <td>4019</td>
+            <td>3307</td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <th>3079</th>
+            <th>3398</th>
+            <th>2827</th>
         </tr>
     </table>
+
+    <!-- Second Table -->
+    <table id="t2" border="1">
+        <caption>Total earnings by employer sector, 2018</caption>
+        <tr>
+            <th rowspan="2">Employer sector</th>
+            <th colspan="3">Median of total earnings</th>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <th>Men</th>
+            <th>Women</th>
+        </tr>
+        <tr>
+            <th>Private</th>
+            <td>3162</td>
+            <td>3381</td>
+            <td>2862</td>
+        </tr>
+        <tr>
+            <th>Local government</th>
+            <td>2812</td>
+            <td>3206</td>
+            <td>2751</td>
+        </tr>
+        <tr>
+            <th>Central government</th>
+            <td>3718</td>
+            <td>4019</td>
+            <td>3307</td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <th>3079</th>
+            <th>3398</th>
+            <th>2827</th>
+        </tr>
+    </table>
+
+    <!-- Third Table -->
+    <table id="t3" border="1">
+        <caption>Total earnings by employer sector, 2018</caption>
+        <tr>
+            <th colspan="2" rowspan="2">Employer sector</th>
+            <th colspan="3">Median of total earnings</th>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <th>Men</th>
+            <th>Women</th>
+        </tr>
+        <tr>
+            <th colspan="2">Private</th>
+            <td>3162</td>
+            <td>3381</td>
+            <td>2862</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Public</th>
+            <th>Local government</th>
+            <td>2812</td>
+            <td>3206</td>
+            <td>2751</td>
+        </tr>
+        <tr>
+            <th>Central government</th>
+            <td>3718</td>
+            <td>4019</td>
+            <td>3307</td>
+        </tr>
+        <tr>
+            <th colspan="2">Total</th>
+            <th>3079</th>
+            <th>3398</th>
+            <th>2827</th>
+        </tr>
+    </table>
+
 </body>
+
 </html>

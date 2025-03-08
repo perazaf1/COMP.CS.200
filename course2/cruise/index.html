@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Booking</title>
+</head>
+
+<body>
+    <h1>Welcome to Best Cruises - Book A Cruise&trade;!</h1>
+
+    <label for="from">From:</label>
+    <br>
+    <select name="From selection" id="from-selection">
+        <option value="Helsinki" id="from-helsinki">Helsinki</option>
+        <option value="Turku" id="from-turku">Turku</option>
+        <option value="Vaasa" id="from-vaasa">Vaasa</option>
+        <option value="Tallinna" id="from-tallinna">Tallinna</option>
+    </select>
+
+    <br>
+
+
+    <label for="to">To:</label>
+    <br>
+    <select name="To selection" id="to-selection">
+        <option value="Helsinki" id="to-helsinki">Helsinki</option>
+        <option value="Turku" id="to-turku">Turku</option>
+        <option value="Vaasa" id="to-vaasa">Vaasa</option>
+        <option value="Tallinna" id="to-tallinna">Tallinna</option>
+    </select>
+
+    <br>
+
+    <form>
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="customer-name" name="Customer Name" required>
+
+
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="customer-email" name="email" required>
+        <br>
+
+        <label for="number-of-adults">Number of adults:</label>
+        <br>
+        <input type="number" id="number-of-adults" name="number of adults" min="1" max="99" required>
+        <br>
+
+        <label for="number-of-adults">Number of children:</label>
+        <br>
+        <input type="number" id="number-of-children" name="number of children" min="0" max="99" required>
+        <br>
+
+        <label for="departure date">Departure date:</label>
+        <br>
+        <input type="date" id="departure-date" name="departure date" required>
+        <br>
+
+        <label for="vehicle">Travelling with a vehicle:</label><br>
+        <input type="checkbox" id="vehicle" name="vehicle" value="Vehicle">
+        <button type="submit" id="submit">Submit</button>
+        <br>
+
+    </form>
+
+</body>
+
+</html>
