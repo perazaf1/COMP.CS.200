@@ -1,6 +1,3 @@
-Great! A well-crafted README file is essential for your GitHub repository. Here's a basic template to get you started:
-
-```markdown
 # Project Title
 
 A brief description of what this project does and who it's for.
