@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+  
+body {
+  color: #606c76;
+  padding: 1rem 2rem 2rem;
+  max-width: 90rem;
+  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.6em;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+}
+
+a {
+  color: #9b4dca;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #606c76;
+}
+
+dl,
+ol,
+ul {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+dl dl,
+dl ol,
+dl ul,
+ol dl,
+ol ol,
+ol ul,
+ul dl,
+ul ol,
+ul ul {
+  font-size: 90%;
+  margin: 1.5rem 0 1.5rem 3rem;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+ul {
+  list-style: circle inside;
+}
+
+dd,
+dt,
+li {
+  margin-bottom: 1rem;
+}
+
+dl,
+figure,
+ol,
+p,
+table,
+ul {
+  margin-bottom: 2.5rem;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+td,
+th {
+  border-bottom: 0.1rem solid #e1e1e1;
+  padding: 1.2rem 1.5rem;
+  text-align: left;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  letter-spacing: -0.1rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+img {
+  max-width: 40rem;
+}
+
+
+.survey {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.survey th, .survey td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.survey th {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.survey td {
+  text-align: left;
+}
+
+.survey input[type="radio"] {
+  transform: scale(1.5);
+  margin: 0 10px;
+}
+
+.survey tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.survey tr:hover {
+  background-color: #f1f1f1;
+}
+
+.survey td:first-child {
+  font-weight: bold;
+}
+
+/* Header styling for radio button options */
+.survey thead {
+  background-color: #eee;
+}
+
+
+
+    /* Set the table layout to fixed for even column distribution */
+    .survey {
+      table-layout: fixed;
+      width: 100%;
+    }
+  
+    /* Ensure the radio buttons are centered horizontally within the td */
+    .survey td {
+      text-align: center;
+    }
+  
+    /* Flexbox for distributing radio buttons evenly in the cells */
+    .survey td input[type="radio"] {
+      display: inline-block;
+      margin: 0 auto;
+    }
+  
+    /* Optional: Adjust input width or spacing if needed */
+    .survey td input[type="radio"] {
+      width: 100%; /* Ensures they fill their container equally */
+    }
