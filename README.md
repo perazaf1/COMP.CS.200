@@ -1,6 +1,6 @@
-# Project Title
+# COMP.CS.200
 
-A brief description of what this project does and who it's for.
+Exercises from Tampere University from course code COMP.CS.200
 
 ## Table of Contents
 
