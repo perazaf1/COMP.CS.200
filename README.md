@@ -40,5 +40,3 @@ Guidelines for contributing to your project.
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 ```
-
-Feel free to customize this template to better fit your project's needs. If you need any specific sections or have questions about what to include, just let me know!
