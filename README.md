@@ -39,4 +39,3 @@ Guidelines for contributing to your project.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-```
