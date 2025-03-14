@@ -1,6 +1,63 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav a, .link17, .link18 {
+  background-color: darkviolet !important;
+  color: white !important;
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 20px !important;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  border: rounded 10px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 60%;
+}
+
+table th {
+  background-color: darkblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+table td {
+  padding: 8px;
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background-color: #ccc;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
