@@ -1,0 +1,62 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Main container styles */
+.container {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Border styles for all sections */
+.swot {
+  border-color: blue;
+  border-style: groove;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header section */
+.container > .swot:first-child {
+  height: 100px;
+}
+
+/* Footer section */
+.container > .swot:last-child {
+  height: 100px;
+}
+
+/* Content container for the three columns */
+.content-container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+/* Left sidebar */
+.content-container > .swot:first-child {
+  width: 150px;
+  flex-shrink: 0;
+}
+
+/* Main content area */
+.content-container > .swot:nth-child(2) {
+  flex: 1;
+}
+
+/* Right sidebar */
+.content-container > .swot:last-child {
+  width: 150px;
+  flex-shrink: 0;
+}

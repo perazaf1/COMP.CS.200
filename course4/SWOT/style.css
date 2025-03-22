@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px; /* Fixed width for the container */
+  height: 600px; /* Fixed height for the container */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+.swot {
+  border: 2px groove blue;
+  flex-basis: calc(50% - 4px); /* Flex-basis instead of width for proper flexbox layout */
+  height: calc(50% - 4px); /* Adjust height to account for border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2em; /* Adjust font size as needed */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  margin: 2px;
+}
