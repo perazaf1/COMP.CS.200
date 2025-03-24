@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Update HTML text content</title>
+  </head>
+  <body>
+    <h1>Update HTML text content</h1>
+    <form id="form">
+      <input type="text" id="type-input" name="type-input" />
+      <button type="submit" id="update-input">Update</button>
+    </form>
+    <p id="receive-input">Replace text inside this paragraph on form submit.</p>
+    <p>
+      Attach an event handler on the form submit action. On form submit replace contents of
+      "<code>p#receive-input</code>" with the value of "<code>input#type-input</code>"-input and
+      reset value of "<code>input#type-input</code>" to empty string. Prevent default action for
+      submit event.
+    </p>
+    <p>
+      The following can be helpful:
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById"
+        target="_blank"
+        ><code>Document.getElementById()</code></a
+      >,
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector"
+        target="_blank"
+        ><code>Document.querySelector()</code></a
+      >,
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener"
+        target="_blank"
+        ><code>EventTarget.addEventListener()</code></a
+      >,
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"
+        target="_blank"
+        ><code>Event.preventDefault()</code></a
+      >
+      and
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText"
+        target="_blank"
+        ><code>HTMLElement.innerText</code></a
+      >
+    </p>
+    <script src="index.js"></script>
+  </body>
+</html>
