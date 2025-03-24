@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TODO</title>
+  </head>
+  <body>
+    <h1>TODO</h1>
+    <form id="form">
+      <input type="text" id="type-input" name="type-input" />
+      <button type="submit" id="update-input">Add</button>
+    </form>
+    <ul id="todo"></ul>
+    <p>
+      Attach an event handler on the form submission. On form submit add new list item to the end of
+      "<code>ul#todo</code>" with the value of "<code>input#type-input</code>". Reset the value of
+      "<code>input#type-input</code>" back to empty string.
+    </p>
+    <p>
+      Attach an event handler on the click event of "<code>ul#todo</code>". Handle click events on
+      individual list items and give them a css class of "done" when they are clicked on the first
+      time. Remove any list items that already have a class of "done" when they are clicked again.
+    </p>
+    <p>
+      The following can be helpful:
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById"
+        target="_blank"
+        ><code>Document.getElementById()</code></a
+      >,
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector"
+        target="_blank"
+        ><code>Document.querySelector()</code></a
+      >,
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener"
+        target="_blank"
+        ><code>EventTarget.addEventListener()</code></a
+      >,
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"
+        target="_blank"
+        ><code>Event.preventDefault()</code></a
+      >,
+      <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget" target="_blank"
+        ><code>Event.currentTarget</code></a
+      >,
+      <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/target" target="_blank"
+        ><code>Event.target</code></a
+      >,
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement"
+        target="_blank"
+        ><code>Document.createElement()</code></a
+      >,
+      <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild" target="_blank"
+        ><code>Node.removeChild()</code></a
+      >,
+      <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/tagName" target="_blank"
+        ><code>Element.tagName</code></a
+      >,
+      <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList" target="_blank">
+        <code>Element.classList</code> </a
+      >, <code>Element.classList.add()</code>, <code>Element.classList.remove()</code>,
+      <code>Element.classList.toggle()</code>, and
+      <code>Element.classList.contains()</code>
+    </p>
+    <script src="todo.js"></script>
+  </body>
+</html>
