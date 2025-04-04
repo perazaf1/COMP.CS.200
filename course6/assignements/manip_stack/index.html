@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercise 5.5</title>
+  </head>
+
+  <body>
+    <div class="container-fluid mt-3">
+      <div class="card shadow p-3 m-2">
+        <h3 class="diplay-3 text-center">Select the technologies you wish to compare</h3>
+        <div id="tech-section" class="d-flex flex-row justify-content-evenly flex-wrap">
+          <h3 style="color: red">No Technology Provided</h3>
+        </div>
+        <div id="range-section" class="d-flex flex-row justify-content-evenly">
+          <div class="row">
+            <div class="col-auto m-auto">Start year:</div>
+            <div class="col-auto">
+              <select class="form-select" id="first-year">
+                <option selected>No start date</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-auto m-auto">End year:</div>
+            <div class="col-auto">
+              <select class="form-select" id="last-year">
+                <option>No end date</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table class="styled-table">
+        <caption>
+          Stack Overflow Technology mentions
+        </caption>
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="stackOverflow.js"></script>
+    <script src="functions.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
