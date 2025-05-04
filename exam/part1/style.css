@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  color: #606c76;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.6em;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  position: relative;
+}
+
+a {
+  color: #9b4dca;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #606c76;
+}
+
+dl,
+ol,
+ul {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+dl dl,
+dl ol,
+dl ul,
+ol dl,
+ol ol,
+ol ul,
+ul dl,
+ul ol,
+ul ul {
+  font-size: 90%;
+  margin: 1.5rem 0 1.5rem 3rem;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+ul {
+  list-style: circle inside;
+}
+
+dd,
+dt,
+li {
+  margin-bottom: 1rem;
+}
+
+dl,
+figure,
+ol,
+p,
+table,
+ul {
+  margin-bottom: 2.5rem;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  letter-spacing: -0.1rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Layout elements */
+header {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+header::after {
+  content: "header";
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: pink;
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  position: relative;
+}
+
+article {
+  flex: 1;
+  padding: 10px;
+  position: relative;
+}
+
+article::after {
+  content: "article";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: pink;
+  font-size: 18px;
+}
+
+aside {
+  width: 200px;
+  padding: 10px;
+  border-left: 1px solid #ddd;
+  position: relative;
+}
+
+aside::after {
+  content: "aside";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: pink;
+  font-size: 18px;
+}
+
+footer {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  position: relative;
+}
+
+footer::after {
+  content: "footer";
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  color: pink;
+  font-size: 18px;
+}
+
+/* Section styling */
+section {
+  border: 1px dotted #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+section::after {
+  content: "section";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: pink;
+  font-size: 18px;
+}
+
+/* Navigation styling */
+nav h2 {
+  margin-top: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+  padding: 5px 0;
+}
+
+nav li a {
+  color: purple;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+/* Add bullet points to navigation items */
+nav li::before {
+  content: "»";
+  color: purple;
+  margin-right: 5px;
+}
+
+/* Recipe specific styling */
+#ingredients img {
+  float: right;
+  width: 50%;
+  margin-left: 10px;
+}
+
+#instructions ol {
+  padding-left: 20px;
+}
+
+/* Make sure sections don't inherit list styling */
+section h2 {
+  margin-top: 0;
+}
+
+/* Clear floats after image */
+#ingredients::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Adjust spacing for notes section */
+#instructions h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styling for time and servings info */
+#summary p {
+  margin: 5px 0;
+}
